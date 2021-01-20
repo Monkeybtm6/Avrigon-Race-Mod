@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Wooden Beak -->
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>WoodenBeak</defName>
+    <label>wooden beak</label>
+    <labelNoun>a wooden beak</labelNoun>
+    <description>An installed wooden beak.</description>
+    <priceImpact>false</priceImpact>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.80</partEfficiency>
+    </addedPartProps>
+    <spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallWoodenPartBase">
+    <defName>InstallBeak</defName>
+    <label>install wooden beak</label>
+    <description>Install a wooden beak.</description>
+    <descriptionHyperlinks>
+      <ThingDef>WoodLog</ThingDef>
+      <HediffDef>WoodenBeak</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing wooden beak.</jobString>
+    <appliedOnFixedBodyParts>
+      <li>Avrigon_Beak</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WoodenBeak</addsHediff>
+  </RecipeDef>
+  
+  <!-- Prosthetic Beak -->
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ProstheticBeak</defName>
+    <label>steel beak</label>
+    <labelNoun>a steel Beak</labelNoun>
+    <description>An installed steel Beak.</description>
+    <descriptionHyperlinks><ThingDef>ProstheticBeak</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ProstheticBeak</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>ProstheticBeak</defName>
+    <label>steel beak</label>
+    <description>A beak prosthesis. Just as good as the real deal given the real things simplicity</description>
+    <descriptionHyperlinks><RecipeDef>InstallProstheticBeak</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <statBases>
+      <Mass>1</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallProstheticBeak</defName>
+    <label>install steel beak</label>
+    <description>Install a steel beak.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ProstheticBeak</ThingDef>
+      <HediffDef>ProstheticBeak</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing steel beak.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ProstheticBeak</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ProstheticBeak</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Avrigon_Beak</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ProstheticBeak</addsHediff>
+  </RecipeDef>
+  
+  </Defs>

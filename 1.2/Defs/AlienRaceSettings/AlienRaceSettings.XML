@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.RaceSettings>
+		<defName>Avrigon_Race_Setting</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+                <li>
+                    <kindDefs>
+                        <li>AvrigonVillager</li>
+                    </kindDefs>
+                    <chance>20.0</chance>
+                </li>
+            </alienslavekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>AvrigonKind</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+</Defs>
