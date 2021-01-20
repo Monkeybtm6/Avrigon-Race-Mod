@@ -14,7 +14,7 @@
 		</statBases>
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0</maleGenderProbability>
+				<maleGenderProbability>0.3</maleGenderProbability>
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>true</canLayDown>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
@@ -22,11 +22,13 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedHeads>true</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
 					<customDrawSize>(1.2, 1.2)</customDrawSize>
 					<alienbodytypes>
 						<li>Female</li>
+						<li>Male</li>
+						<li>Thin</li>
 					</alienbodytypes>
 					<colorChannels>
 						<li>
@@ -157,16 +159,22 @@
 								<south>
 									<bodyTypes>
 										<Female>(-0.42,0.55)</Female>
+										<Male>(-0.42,0.55)</Male>
+										<Thin>(-0.42,0.55)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Female>(-0,0.8)</Female>
+										<Male>(-0,0.8)</Male>
+										<Thin>(-0,0.8)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.5,0.5)</Female>
+										<Male>(-0.5,0.5)</Male>
+										<Thin>(-0.5,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -187,16 +195,22 @@
 								<south>
 									<bodyTypes>
 										<Female>(-0.42,0.55)</Female>
+										<Male>(-0.42,0.55)</Male>
+										<Thin>(-0.42,0.55)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Female>(-0,0.8)</Female>
+										<Male>(-0,0.8)</Male>
+										<Thin>(-0,0.8)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.5,0.5)</Female>
+										<Male>(-0.5,0.5)</Male>
+										<Thin>(-0.5,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -214,16 +228,22 @@
 								<south>
 									<bodyTypes>
 										<Female>(-0.42,0.55)</Female>
+										<Male>(-0.42,0.55)</Male>
+										<Thin>(-0.42,0.55)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Female>(-0,0.8)</Female>
+										<Male>(-0,0.8)</Male>
+										<Thin>(-0,0.8)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.5,0.5)</Female>
+										<Male>(-0.5,0.5)</Male>
+										<Thin>(-0.5,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -241,16 +261,22 @@
 								<south>
 									<bodyTypes>
 										<Female>(-0.42,0.55)</Female>
+										<Male>(-0.42,0.55)</Male>
+										<Thin>(-0.42,0.55)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Female>(-0,0.8)</Female>
+										<Male>(-0,0.8)</Male>
+										<Thin>(-0,0.8)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.5,0.5)</Female>
+										<Male>(-0.5,0.5)</Male>
+										<Thin>(-0.5,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -268,16 +294,22 @@
 								<south>
 									<bodyTypes>
 										<Female>(-0.42,0.55)</Female>
+										<Male>(-0.42,0.55)</Male>
+										<Thin>(-0.42,0.55)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
 										<Female>(-0,0.8)</Female>
+										<Male>(-0,0.8)</Male>
+										<Thin>(-0,0.8)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.5,0.5)</Female>
+										<Male>(-0.5,0.5)</Male>
+										<Thin>(-0.5,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -294,17 +326,23 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Female>(-0.475,-0.3)</Female>
+										<Female>(-0.4,0.1)</Female>
+										<Male>(-0.4,0.1)</Male>
+										<Thin>(-0.4,0.1)</Thin>
 									</bodyTypes>
 								</south>
 								<north>
 									<bodyTypes>
-										<Female>(0,0.3)</Female>
+										<Female>(0.2,0.5)</Female>
+										<Male>(0.2,0.5)</Male>
+										<Thin>(0.2,0.5)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Female>(-0.1,0.3)</Female>
+										<Male>(-0.125,0.3)</Male>
+										<Thin>(-0.1,0.3)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>

@@ -95,7 +95,7 @@
   <PawnKindDef ParentName="AvrigonBase">
     <defName>AvrigonTown_Councilman</defName>
     <label>Avrigon town councilman</label>
-    <labelPlural>town councilmen</labelPlural>
+    <labelPlural>Avrigon town councilmen</labelPlural>
     <combatPower>40</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>30</minGenerationAge>
