@@ -172,9 +172,9 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Female>(-0.5,0.5)</Female>
-										<Male>(-0.5,0.5)</Male>
-										<Thin>(-0.5,0.5)</Thin>
+										<Female>(-0.55,0.5)</Female>
+										<Male>(-0.55,0.5)</Male>
+										<Thin>(-0.55,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -208,9 +208,9 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Female>(-0.5,0.5)</Female>
-										<Male>(-0.5,0.5)</Male>
-										<Thin>(-0.5,0.5)</Thin>
+										<Female>(-0.55,0.5)</Female>
+										<Male>(-0.55,0.5)</Male>
+										<Thin>(-0.55,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -241,9 +241,9 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Female>(-0.5,0.5)</Female>
-										<Male>(-0.5,0.5)</Male>
-										<Thin>(-0.5,0.5)</Thin>
+										<Female>(-0.55,0.5)</Female>
+										<Male>(-0.55,0.5)</Male>
+										<Thin>(-0.55,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -274,9 +274,9 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Female>(-0.5,0.5)</Female>
-										<Male>(-0.5,0.5)</Male>
-										<Thin>(-0.5,0.5)</Thin>
+										<Female>(-0.55,0.5)</Female>
+										<Male>(-0.55,0.5)</Male>
+										<Thin>(-0.55,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -307,9 +307,9 @@
 								</north>
 								<east>
 									<bodyTypes>
-										<Female>(-0.5,0.5)</Female>
-										<Male>(-0.5,0.5)</Male>
-										<Thin>(-0.5,0.5)</Thin>
+										<Female>(-0.55,0.5)</Female>
+										<Male>(-0.55,0.5)</Male>
+										<Thin>(-0.55,0.5)</Thin>
 									</bodyTypes>
 								</east>
 							</offsets>
