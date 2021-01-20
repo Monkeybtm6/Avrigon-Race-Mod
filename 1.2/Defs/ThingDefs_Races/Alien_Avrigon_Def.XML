@@ -333,9 +333,9 @@
 								</south>
 								<north>
 									<bodyTypes>
-										<Female>(0.2,0.5)</Female>
-										<Male>(0.2,0.5)</Male>
-										<Thin>(0.2,0.5)</Thin>
+										<Female>(0.0,0.35)</Female>
+										<Male>(0.0,0.35)</Male>
+										<Thin>(0.0,0.35)</Thin>
 									</bodyTypes>
 								</north>
 								<east>
