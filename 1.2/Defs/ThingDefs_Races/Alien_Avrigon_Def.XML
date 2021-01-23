@@ -75,6 +75,10 @@
 										<weight>10</weight>
 										<only>RGBA(252, 194, 3, 255)</only>
 									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(66, 164, 245, 255)</only>
+									</li>
 								</options>
 							</first>
 							<second Class="ColorGenerator_Options">
