@@ -92,4 +92,66 @@
     <addsHediff>ProstheticBeak</addsHediff>
   </RecipeDef>
   
+<!-- Prosthetic Tail -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>SimpleProstheticTail</defName>
+    <label>prosthetic tail</label>
+    <labelNoun>a prosthetic tail</labelNoun>
+    <description>An installed prosthetic tail.</description>
+    <descriptionHyperlinks><ThingDef>SimpleProstheticTail</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>SimpleProstheticTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.85</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>SimpleProstheticTail</defName>
+    <label>prosthetic tail</label>
+    <description>A tail prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real tail.</description>
+    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticTail</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallSimpleProstheticTail</defName>
+    <label>install prosthetic tail</label>
+    <description>Install a prosthetic tail.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SimpleProstheticTail</ThingDef>
+      <HediffDef>SimpleProstheticTail</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing prosthetic tail.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SimpleProstheticTail</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>AV_Tail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticTail</addsHediff>
+  </RecipeDef>
+  
   </Defs>
