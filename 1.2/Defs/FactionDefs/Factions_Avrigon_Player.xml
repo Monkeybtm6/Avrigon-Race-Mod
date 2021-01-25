@@ -13,7 +13,7 @@
     <label>New Arrivals</label>
     <description>A colony of recently-arrived off-worlders.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist</basicMemberKind>
+    <basicMemberKind>AvrigonKind</basicMemberKind>
     <pawnSingular>colonist</pawnSingular>
     <pawnsPlural>colonists</pawnsPlural>
     <techLevel>Industrial</techLevel>
@@ -53,7 +53,7 @@
     <isPlayer>true</isPlayer>
     <pawnSingular>tribesman</pawnSingular>
     <pawnsPlural>tribespeople</pawnsPlural>
-    <basicMemberKind>Tribesperson</basicMemberKind>
+    <basicMemberKind>TribesAvrigon</basicMemberKind>
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
       <li>

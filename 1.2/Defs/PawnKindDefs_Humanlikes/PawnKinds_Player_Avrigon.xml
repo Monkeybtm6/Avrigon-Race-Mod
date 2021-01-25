@@ -29,4 +29,22 @@
     </techHediffsTags>
   </PawnKindDef>
 
-</Defs>
+  <PawnKindDef ParentName="BaseAvrigonPawnKind">
+    <defName>TribesAvrigon</defName>
+    <label>member</label>
+    <race>Alien_Avrigon</race>
+    <defaultFactionType>PlayerTribe</defaultFactionType>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>200~200</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+  </PawnKindDef>
+  
+  </Defs>
