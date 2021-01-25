@@ -21,6 +21,11 @@
 				<allowHumanBios>true</allowHumanBios>
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToXenophobia>false</immuneToXenophobia>
+				<disallowedTraits>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>true</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
