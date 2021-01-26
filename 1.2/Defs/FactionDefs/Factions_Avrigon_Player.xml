@@ -10,7 +10,7 @@
   
   <FactionDef ParentName="PlayerAvrigonFactionBase">
     <defName>PlayerAvrigonColony</defName>
-    <label>New Arrivals</label>
+    <label>New Avrigon Arrivals</label>
     <description>A colony of recently-arrived off-worlders.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>AvrigonKind</basicMemberKind>
@@ -48,7 +48,7 @@
   
   <FactionDef ParentName="PlayerAvrigonFactionBase">
     <defName>PlayerAvrigonTribe</defName>
-    <label>New Tribe</label>
+    <label>New Avrigon Tribe</label>
     <description>A small tribe.</description>
     <isPlayer>true</isPlayer>
     <pawnSingular>tribesman</pawnSingular>
