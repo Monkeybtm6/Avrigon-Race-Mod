@@ -96,20 +96,36 @@
 							</offsets>
 						</li>
 						<li>
-							<bodyPart>Right Ear</bodyPart>
+							<bodyPart>right ear</bodyPart>
 							<path>Things/Avrigon/Head/TR_RightEar</path>
 							<inFrontOfBody>True</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
+							<offsets>
+								<west>
+									<layerOffset>-0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>0.33</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<li>
-							<bodyPart>Left Ear</bodyPart>
+							<bodyPart>left ear</bodyPart>
 							<path>Things/Avrigon/Head/TR_LeftEar</path>
 							<inFrontOfBody>True</inFrontOfBody>
 							<colorChannel>skin</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
+							<offsets>
+								<west>
+									<layerOffset>0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>-0.33</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<li>
 							<bodyPart>Right Horn</bodyPart>
