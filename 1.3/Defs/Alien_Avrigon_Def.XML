@@ -35,7 +35,6 @@
 							<bodyPart>tail</bodyPart>
 							<path>Things/Avrigon/Body/AVTail</path>
 							<inFrontOfBody>false</inFrontOfBody>
-							<drawRotated>true</drawRotated>
 							<colorChannel>skin</colorChannel>
 							<drawnInBed>False</drawnInBed>
 							<alignWithHead>False</alignWithHead>

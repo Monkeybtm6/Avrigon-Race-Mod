@@ -154,4 +154,64 @@
     <addsHediff>SimpleProstheticTail</addsHediff>
   </RecipeDef>
   
-  </Defs>
+  <!-- Bionic Tail -->
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicTail</defName>
+    <label>bionic tail</label>
+    <labelNoun>a bionic tail</labelNoun>
+    <description>An installed bionic tail.</description>
+    <descriptionHyperlinks><ThingDef>BionicTail</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicTail</defName>
+    <label>bionic tail</label>
+    <description>An advanced artificial tail. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological tail in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicTail</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicTail</defName>
+    <label>install bionic tail</label>
+    <description>Install a bionic tail.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicTail</ThingDef>
+      <HediffDef>BionicTail</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic tail.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicTail</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>AV_Tail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicTail</addsHediff>
+  </RecipeDef>
+</Defs>
