@@ -38,6 +38,9 @@
 							<colorChannel>skin</colorChannel>
 							<drawnInBed>False</drawnInBed>
 							<alignWithHead>False</alignWithHead>
+							<hediffGraphics>
+								<BionicTail>Things/Avrigon/Body/AVSynTail</BionicTail>
+							</hediffGraphics>
 							<offsets>
 								<south>
 									<bodyTypes>
