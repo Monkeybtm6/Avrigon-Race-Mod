@@ -35,58 +35,113 @@
 							<bodyPart>tail</bodyPart>
 							<path>Things/Avrigon/Body/AVTail</path>
 							<inFrontOfBody>false</inFrontOfBody>
-							<colorChannel>Skin</colorChannel>
+							<drawRotated>true</drawRotated>
+							<colorChannel>skin</colorChannel>
 							<drawnInBed>False</drawnInBed>
 							<alignWithHead>False</alignWithHead>
-
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Female>(0.0,0.0)</Female>
+										<Male>(0.0,0.0)</Male>
+										<Thin>(0.0,0.0)</Thin>
+										<Fat>(0.0,0.0)</Fat>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Female>(0.0,-0.24)</Female>
+										<Male>(0.0,-0.24)</Male>
+										<Thin>(0.0,-0.24)</Thin>
+										<Fat>(0.0,-0.24)</Fat>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>0.33</layerOffset>
+									<bodyTypes>
+										<Female>(0.30,0.0)</Female>
+										<Male>(0.30,0.0)</Male>
+										<Thin>(0.30,0.0)</Thin>
+										<Fat>(0.30,0.03)</Fat>
+									</bodyTypes>
+								</east>
+							</offsets>
 						</li>
 						<li>
 							<bodyPart>Avrigon Beak</bodyPart>
 							<path>Things/Avrigon/Head/AV_Beak</path>
 							<inFrontOfBody>True</inFrontOfBody>
-							<colorChannel>Beak</colorChannel>
+							<colorChannel>beak</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
 							<hiddenUnderApparelFor>
 								<li>FullHead</li>
 							</hiddenUnderApparelFor>
-
+							<offsets>
+								<south>
+									<crownTypes>
+										<Average_Normal>(0.0, 0.0)</Average_Normal>
+									</crownTypes>
+								</south>
+								<north>
+									<crownTypes>
+										<Average_Normal>(0.0, 0.0)</Average_Normal>
+									</crownTypes>
+								</north>
+								<east>
+									<crownTypes>
+										<Average_Normal>(-0.07, 0.0)</Average_Normal>
+									</crownTypes>
+								</east>
+							</offsets>
 						</li>
 						<li>
 							<bodyPart>Right Ear</bodyPart>
 							<path>Things/Avrigon/Head/TR_RightEar</path>
 							<inFrontOfBody>True</inFrontOfBody>
-							<colorChannel>Skin</colorChannel>
+							<colorChannel>skin</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
-
 						</li>
 						<li>
 							<bodyPart>Left Ear</bodyPart>
 							<path>Things/Avrigon/Head/TR_LeftEar</path>
 							<inFrontOfBody>True</inFrontOfBody>
-							<colorChannel>Skin</colorChannel>
+							<colorChannel>skin</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
-
 						</li>
 						<li>
 							<bodyPart>Right Horn</bodyPart>
 							<path>Things/Avrigon/Head/AV_RightHorn</path>
 							<inFrontOfBody>True</inFrontOfBody>
-							<colorChannel>Skin</colorChannel>
+							<colorChannel>beak</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
-
+							<offsets>
+								<west>
+									<layerOffset>-0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>0.33</layerOffset>
+								</east>
+							</offsets>
 						</li>
 						<li>
 							<bodyPart>Left Horn</bodyPart>
 							<path>Things/Avrigon/Head/AV_LeftHorn</path>
 							<inFrontOfBody>True</inFrontOfBody>
-							<colorChannel>Skin</colorChannel>
+							<colorChannel>beak</colorChannel>
 							<drawnInBed>True</drawnInBed>
 							<alignWithHead>True</alignWithHead>
-
+							<offsets>
+								<west>
+									<layerOffset>0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>-0.33</layerOffset>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 					<colorChannels>
@@ -289,5 +344,52 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
