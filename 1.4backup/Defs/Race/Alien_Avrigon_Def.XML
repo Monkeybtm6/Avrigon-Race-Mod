@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Avrigon</defName>
+		<label>Avrigon</label>
+		<description>Long Lived race of draconic avians. Result of some unknown genetic conversion process.</description>
+	    
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.2</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>true</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<disallowedTraits>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<bodytypes>
+						<li>Female</li>
+						<li>Male</li>
+						<li>Thin</li>
+						<li>Fat</li>
+					</bodytypes>
+					<headTypes>
+						<li>Average_Normal</li>
+					</headTypes>
+					<bodyAddons>
+						<li>
+							<bodyPart>Avrigon Tail</bodyPart>
+							<path>Things/Avrigon/Body/AVTail</path>
+							<inFrontOfBody>false</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>False</drawnInBed>
+							<alignWithHead>False</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>Tail</defaultOffset>
+							<hediffGraphics>
+								<BionicTail>Things/Avrigon/Body/AVSynTail</BionicTail>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Female>(0.0,0.0)</Female>
+										<Male>(0.0,0.0)</Male>
+										<Thin>(0.0,0.0)</Thin>
+										<Fat>(0.0,0.0)</Fat>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Female>(0.0,-0.24)</Female>
+										<Male>(0.0,-0.24)</Male>
+										<Thin>(0.0,-0.24)</Thin>
+										<Fat>(0.0,-0.24)</Fat>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>0.33</layerOffset>
+									<bodyTypes>
+										<Female>(0.30,0.0)</Female>
+										<Male>(0.30,0.0)</Male>
+										<Thin>(0.30,0.0)</Thin>
+										<Fat>(0.30,0.03)</Fat>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<bodyPart>Avrigon Beak</bodyPart>
+							<path>Things/Avrigon/Head/AV_Beak</path>
+							<inFrontOfBody>True</inFrontOfBody>
+							<colorChannel>beak</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<alignWithHead>True</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<offsets>
+								<south>
+									<crownTypes>
+										<Average_Normal>(0.0, 0.0)</Average_Normal>
+									</crownTypes>
+								</south>
+								<north>
+									<crownTypes>
+										<Average_Normal>(0.0, 0.0)</Average_Normal>
+									</crownTypes>
+								</north>
+								<east>
+									<crownTypes>
+										<Average_Normal>(-0.07, 0.0)</Average_Normal>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<bodyPart>right ear</bodyPart>
+							<path>Things/Avrigon/Head/TR_RightEar</path>
+							<inFrontOfBody>True</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<alignWithHead>True</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<offsets>
+								<west>
+									<layerOffset>-0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>0.33</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<bodyPart>left ear</bodyPart>
+							<path>Things/Avrigon/Head/TR_LeftEar</path>
+							<inFrontOfBody>True</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<alignWithHead>True</alignWithHead>
+							<offsets>
+								<west>
+									<layerOffset>0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>-0.33</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<bodyPart>Right Horn</bodyPart>
+							<path>Things/Avrigon/Head/AV_RightHorn</path>
+							<inFrontOfBody>True</inFrontOfBody>
+							<colorChannel>beak</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<alignWithHead>True</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<offsets>
+								<west>
+									<layerOffset>-0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>0.33</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<bodyPart>Left Horn</bodyPart>
+							<path>Things/Avrigon/Head/AV_LeftHorn</path>
+							<inFrontOfBody>True</inFrontOfBody>
+							<colorChannel>beak</colorChannel>
+							<drawnInBed>True</drawnInBed>
+							<alignWithHead>True</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<offsets>
+								<west>
+									<layerOffset>0.33</layerOffset>
+								</west>
+								<east>
+									<layerOffset>-0.33</layerOffset>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(214, 36, 24, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(60, 60, 60, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(153, 0, 220, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(23, 98, 227, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(186, 109, 37, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(220, 195, 30, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(100, 150, 100, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(80, 70, 130, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(66, 135, 245, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(252, 194, 3, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(66, 164, 245, 255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+								</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>beak</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(130, 32, 32, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(40, 40, 40, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(127, 130, 32, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(32, 130, 63, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(32, 122, 130, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(32, 71, 130, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(58, 32, 130, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(107, 32, 130, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(130, 32, 120, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(252, 194, 3, 255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+								</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<body>Things/Avrigon/Body/</body>
+					<head>Things/Avrigon/Head/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+	
+			</styleSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+				</cannotReceiveThoughts>
+				<ateThoughtSpecific>
+				</ateThoughtSpecific>
+				<replacerList>
+				</replacerList>
+			</thoughtSettings>
+			<relationSettings>
+	
+			</relationSettings>
+			<raceRestriction>
+	
+			</raceRestriction>
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+		</alienRace>
+		
+		<race>
+		    <thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<nameCategory>HumanStandard</nameCategory>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>600</lifeExpectancy>
+			<foodType>OmnivoreHuman</foodType>
+			<body>Avrigon</body>
+			<hasGenders>true</hasGenders>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseHungerRate>1.2</baseHungerRate>
+			<baseBodySize>1.0</baseBodySize>
+			<leatherDef>Leather_Bird</leatherDef>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,100)</li>
+					<li>(240,100)</li>
+					<li>(320,30)</li>
+					<li>(400,18)</li>
+					<li>(500,10)</li>
+					<li>(600,3)</li>
+					<li>(700,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeToddler</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Avrigon_Beak</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.5</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

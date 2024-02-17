@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<BodyPartDef>
+		<defName>Left_Horn</defName>
+		<label>left horn</label>
+		<hitPoints>40</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Right_Horn</defName>
+		<label>right horn</label>
+		<hitPoints>40</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Avrigon_Beak</defName>
+		<label>avrigon beak</label>
+		<hitPoints>40</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<beautyRelated>true</beautyRelated>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AV_Tail</defName>
+		<label>tail</label>
+		<hitPoints>50</hitPoints>
+		<frostbiteVulnerability>0.25</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>		
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

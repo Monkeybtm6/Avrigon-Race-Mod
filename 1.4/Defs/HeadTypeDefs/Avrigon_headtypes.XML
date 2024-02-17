@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase" Name="AV_Base_Average" Abstract="True"> </HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AV_Base_Average">
+		<defName>AV_Male_Average</defName>
+		<gender>Male</gender>
+		<graphicPath>Things/Avrigon/Head/Male_Average_Normal</graphicPath>
+	</HeadTypeDef>
+  
+	<HeadTypeDef ParentName="AV_Base_Average">
+		<defName>AV_Female_Average</defName>
+		<gender>Female</gender>
+		<graphicPath>Things/Avrigon/Head/Female_Average_Normal</graphicPath>
+	</HeadTypeDef>
+</Defs>

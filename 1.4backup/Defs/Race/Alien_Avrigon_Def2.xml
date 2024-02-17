@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+		<defName>Alien_Avrigon</defName>
+		<label>Avrigon</label>
+		<description>Long Lived race of draconic avians. Result of some unknown genetic conversion process.</description>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>
